@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Profile</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            background-color: rgb(99, 7, 63);
+
+            display: flex;
+
+
+
+            flex-wrap: wrap;
+
+
+            justify-content: center;
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+
+        }
+
+        .item {
+            border-radius: 20px;
+            width: 500px;
+            height: 200px;
+            background-color: rgb(236, 245, 226);
+            border: 2px solid rgb(3, 1, 19);
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1 {
+
+            width: 700px;
+            height: 200px;
+
+            flex-grow: 100;
+            /*flex-shrink: 2;  */
+            display: inline-block;
+
+        }
+
+        /* #item-2 {
+            flex-grow: 2;
+            /* flex-shrink: 3 ; */
+        flex-basis: 160px;
+        /* when flex-direction is set to row flex-basis: will control width */
+        /* when flex-direction is set to column flex-basis: will control height }*/
+
+
+        #item-3 {
+            /* flex: 2 2 230px; */
+            /* align-self: flex-start;
+            align-self: flex-end;
+            align-self: center; */
+        }
+
+
+
+        #item-4 {
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+
+        }
+
+        #item-5 {
+            flex-grow: 2;
+            /* flex-shrink: 3 ; */
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+
+        #item-6 {
+            /* flex: 2 2 230px; */
+            /* align-self: flex-start;
+            align-self: flex-end;
+            align-self: center; */
+        }
+
+        body {
+            font-family: 'Baloo Bhai', cursive;
+            color: black;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            line-height: 19px;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(99, 7, 63);
+
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my Website!</h1>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <!-- <div>Harry Fitness</div> -->
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">My Skills</a></li>
+                <li><a href="#">My projects</a></li>
+                <li><a href="#">Download CV</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="item" id="item-1">First Box</div>
+            <!-- <div class="item" id="item-2">Second Box</div> -->
+            <div class="item" id="item-3">Third Box</div>
+            <div class="item" id="item-4">Fourth Box</div>
+            <div class="item" id="item-5">Fifth Box</div>
+            <div class="item" id="item-6">Sixth Box</div>
+
+
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email</button>
+        </div>
+        </div>
+
+</body>
+
+</html>
